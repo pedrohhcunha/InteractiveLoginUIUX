@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(130deg, rgb(121, 187, 187), rgb(155, 224, 224));
+}
+.container-principal{
+    width: 70%;
+    height: 550px;
+    border-radius: 50px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-principal .area-cadastro, .container-principal .area-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+.container{
+    text-align: center;
+    width: 70%;
+}
+.container h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #206e74;
+    margin-bottom: 15px;
+}
+.container .area-input{
+    width: 100%;
+    height: 50px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.container .area-input i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #206e74;
+}
+.container .area-input input{
+    border: none;
+    background: none;
+    width: 100%;
+    font-weight: 600;
+    color: #206e74;
+}
+.container form button{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    background-color: none;
+    border: 2px solid #206e74;
+    border-radius: 5px;
+    color: #206e74;
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.container form button:hover{
+    background-color: #206e74;
+    color: #fff;
+    transition: ease-in-out .2s;
+}
+.controlador{
+    width: 35%;
+    height: 550px;
+    background-color: #206e74;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.controlador h1{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.controlador p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+.controlador button{
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+.controlador button:hover{
+    background-color: #fff;
+    color: #206e74;
+}
+.controlador.activeLogin{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transform: translate3d(50%, 0px, 0px);
+    transition: 1s;
+}
+.controlador.activeCadastro{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transform: translate3d(-50%, 0px, 0px);
+    transition: 1s;
+}

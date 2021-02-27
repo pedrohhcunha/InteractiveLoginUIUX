@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/27b9c83134.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>Tela </title>
+</head>
+<body>
+    <div class="container-principal">
+        <div class="area-cadastro">
+            <div class="container">
+                <h1>Cadastro</h1>
+                <form method="post">
+                    <div class="area-input">
+                        <i class="far fa-user"></i>
+                        <input type="text" placeholder="Nome">
+                    </div>
+                    <div class="area-input">
+                        <i class="far fa-user"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="area-input">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Senha">
+                    </div>
+                    <div class="area-input">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Confirmar senha">
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+        <div class="area-login">
+            <div class="container">
+                <h1>Login</h1>
+                <form method="post">
+                    <div class="area-input">
+                        <i class="far fa-user"></i>
+                        <input type="text" placeholder="Nome">
+                    </div>
+                    <div class="area-input">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Senha">
+                    </div>
+
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="controlador" class="controlador activeLogin">
+        <div>
+            <h1>Bem-vindo</h1>
+            <p>Olá, seja muito bem vindo(a) a maior rede de produtos veganos do brasil a VEGANIXX!</p>
+            <button id="btnControlador">Fazer Login</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
